@@ -5,11 +5,9 @@ interval: 30
 
 bbdc:
   username:
-    # "086X27032000"
-    "746G14061997"
+    # "1234567890"
   password:
-    # "000327"
-    "100106"
+    # '123456'
 
 telegram:
   token: "5594242872:AAFEEfjCh5-crMAQdIQrASYBPfyumPBdyw4"
