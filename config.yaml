@@ -1,16 +1,22 @@
 # config
 
-# interval in mins
+# full path to your downloaded chromedriver file
+chromedriver: "C://Program Files (x86)/chromedriver.exe"
+
+# modify this to change search frequency, unit is in mins
 interval: 30
 
 bbdc:
-  username:
-    # "1234567890"
-  password:
-    # '123456'
+  # change this to the username you use to login to BBDC website
+  username: "1234567890"
+  # change this to the password you use to login to BBDC website
+  password: "123456"
 
 telegram:
+  # token of your Telegram bot
   token: "5594242872:AAFEEfjCh5-crMAQdIQrASYBPfyumPBdyw4"
+  # chat id that you want messages to be sent to
   chat_id: "-793162416"
 
+# lessons in months not included in this list will be omitted; months need to be in Mon'YY format, such as "Jan'23"
 month_list: ["Jan'23", "Feb'23", "Mar'23", "Apr'23", "May'23"]

@@ -1,8 +1,4 @@
-import sys
 from selenium import webdriver
-from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException
 import logging
@@ -27,7 +23,7 @@ def app(config):
     options.add_argument("--window-size=1920,1080")
     options.add_argument("--start-maximized")
     browser = webdriver.Chrome(
-        "C://Program Files (x86)/chromedriver.exe", options=options)
+        month_list=config["chromedriver"], options=options)
 
     username = config["bbdc"]["username"]
     password = config["bbdc"]["password"]
